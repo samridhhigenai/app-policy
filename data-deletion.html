@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Deletion Request - Cash Manager App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 3px solid #FF3B30;
+            margin-bottom: 30px;
+        }
+        
+        header h1 {
+            color: #FF3B30;
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        h2 {
+            color: #FF3B30;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            border-left: 4px solid #FF3B30;
+            padding-left: 15px;
+        }
+        
+        h3 {
+            color: #D84C1A;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .important-box {
+            background-color: #FFE5E5;
+            padding: 20px;
+            border-left: 4px solid #FF3B30;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .step-box {
+            background-color: #F0F7FF;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: 2px solid #007AFF;
+        }
+        
+        .step-box h3 {
+            color: #007AFF;
+            margin-top: 0;
+        }
+        
+        .contact-box {
+            background-color: #E8F7F1;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 2px solid #34C759;
+        }
+        
+        .contact-box p {
+            margin-bottom: 10px;
+        }
+        
+        strong {
+            color: #D84C1A;
+        }
+        
+        a {
+            color: #007AFF;
+            text-decoration: none;
+            word-break: break-word;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .email-link {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #FF3B30;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .timeline {
+            background-color: #FFF3CD;
+            padding: 15px;
+            border-left: 4px solid #FFC107;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+                margin: 10px;
+            }
+            
+            header h1 {
+                font-size: 1.6em;
+            }
+            
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🗑️ Data Deletion Request</h1>
+            <p class="subtitle">Cash Manager App</p>
+        </header>
+        
+        <main>
+            <section id="introduction">
+                <p>Thank you for using <strong>Cash Manager App</strong>. We respect your privacy and your right to control your personal data. This page explains how you can request deletion of your data from our app.</p>
+                
+                <div class="important-box">
+                    <p><strong>Important:</strong> Cash Manager App primarily stores your data locally on your device. Most of your data can be deleted directly from your device without contacting us. However, if you have enabled cloud backup features or want to ensure complete deletion, please follow the instructions below.</p>
+                </div>
+            </section>
+            
+            <section id="what-data">
+                <h2>What Data is Deleted?</h2>
+                <p>When you request data deletion, the following types of data will be removed:</p>
+                <ul>
+                    <li><strong>Cash Records</strong>: All your financial entries, transactions, and balances</li>
+                    <li><strong>User Preferences</strong>: App settings, theme preferences, language settings</li>
+                    <li><strong>Cloud Backups</strong>: Any data backed up to Firebase (if cloud backup was enabled)</li>
+                    <li><strong>Analytics Data</strong>: Your usage patterns and app interaction data stored in Firebase Analytics</li>
+                    <li><strong>Crash Reports</strong>: Any crash logs associated with your device</li>
+                </ul>
+            </section>
+            
+            <section id="what-retained">
+                <h2>What Data is Retained?</h2>
+                <p>The following data may be retained for legal and operational purposes:</p>
+                <ul>
+                    <li><strong>Anonymous Analytics</strong>: Aggregated, anonymized data that cannot identify you personally (retained for up to 12 months)</li>
+                    <li><strong>Legal Records</strong>: Data required by law to be retained for compliance purposes</li>
+                    <li><strong>Advertising IDs</strong>: These are managed by Google and your device; reset them separately in device settings</li>
+                </ul>
+            </section>
+            
+            <section id="deletion-methods">
+                <h2>How to Delete Your Data</h2>
+                
+                <h3>Option 1: Delete Data Directly on Your Device (Recommended)</h3>
+                <div class="step-box">
+                    <h3>📱 For Android Users:</h3>
+                    <ol>
+                        <li>Go to your device <strong>Settings</strong></li>
+                        <li>Navigate to <strong>Apps</strong> or <strong>Applications</strong></li>
+                        <li>Find and select <strong>Cash Manager App</strong></li>
+                        <li>Tap on <strong>Storage</strong></li>
+                        <li>Select <strong>Clear Data</strong> or <strong>Clear Storage</strong></li>
+                        <li>Confirm the action</li>
+                    </ol>
+                    <p><strong>Result:</strong> All local data including cash records, preferences, and cache will be permanently deleted.</p>
+                </div>
+                
+                <div class="step-box">
+                    <h3>🍎 For iOS Users:</h3>
+                    <ol>
+                        <li>Go to device <strong>Settings</strong></li>
+                        <li>Tap <strong>General</strong></li>
+                        <li>Select <strong>iPhone Storage</strong></li>
+                        <li>Find and tap <strong>Cash Manager App</strong></li>
+                        <li>Choose <strong>Delete App</strong></li>
+                        <li>Confirm deletion</li>
+                    </ol>
+                    <p><strong>Result:</strong> The app and all associated data will be removed from your device.</p>
+                </div>
+                
+                <h3>Option 2: Delete Data Through In-App Settings</h3>
+                <div class="step-box">
+                    <h3>⚙️ In-App Data Reset:</h3>
+                    <ol>
+                        <li>Open <strong>Cash Manager App</strong></li>
+                        <li>Go to <strong>Settings</strong> or <strong>Menu</strong></li>
+                        <li>Look for <strong>Reset Data</strong> or <strong>Clear All Data</strong> option</li>
+                        <li>Confirm the deletion</li>
+                    </ol>
+                    <p><strong>Note:</strong> This deletes local data but may not remove cloud backups.</p>
+                </div>
+                
+                <h3>Option 3: Request Complete Data Deletion (Including Cloud Backups)</h3>
+                <div class="step-box">
+                    <h3>📧 Email Request:</h3>
+                    <p>If you have enabled cloud backup or want to ensure complete deletion from all our systems, send an email to:</p>
+                    <p class="email-link">📩 <a href="mailto:rajnee.dubey1987@gmail.com">rajnee.dubey1987@gmail.com</a></p>
+                    <p><strong>Include the following information:</strong></p>
+                    <ul>
+                        <li>Subject: "Data Deletion Request - Cash Manager App"</li>
+                        <li>Your device ID or advertising ID (found in app settings or device settings)</li>
+                        <li>Email address associated with the app (if any)</li>
+                        <li>Confirmation that you want all data deleted</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="timeline">
+                <h2>⏱️ Deletion Timeline</h2>
+                <div class="timeline">
+                    <ul>
+                        <li><strong>Immediate</strong>: Local data deleted instantly when you clear app data on your device</li>
+                        <li><strong>Within 7 days</strong>: Cloud backups and Firebase data deleted after email request</li>
+                        <li><strong>Within 30 days</strong>: Complete removal from all backup systems and archives</li>
+                        <li><strong>Up to 12 months</strong>: Anonymized analytics data (cannot identify you personally)</li>
+                    </ul>
+                    <p><strong>Note:</strong> We will confirm deletion via email once the process is complete.</p>
+                </div>
+            </section>
+            
+            <section id="advertising-id">
+                <h2>📱 Reset Your Advertising ID</h2>
+                <p>To remove personalized advertising data, reset your Advertising ID:</p>
+                
+                <h3>Android:</h3>
+                <ol>
+                    <li>Settings → Google → Manage your Google Account</li>
+                    <li>Data & Privacy → Ad personalization</li>
+                    <li>Reset advertising ID</li>
+                </ol>
+                
+                <h3>iOS:</h3>
+                <ol>
+                    <li>Settings → Privacy</li>
+                    <li>Apple Advertising</li>
+                    <li>Reset Advertising Identifier</li>
+                </ol>
+            </section>
+            
+            <section id="contact">
+                <h2>💬 Need Help?</h2>
+                <div class="contact-box">
+                    <p><strong>For any questions or assistance with data deletion:</strong></p>
+                    <p><strong>Email:</strong> <a href="mailto:rajnee.dubey1987@gmail.com">rajnee.dubey1987@gmail.com</a></p>
+                    <p><strong>Response Time:</strong> We will respond within 30 days</p>
+                    <p><strong>Subject Line:</strong> "Data Deletion Request - Cash Manager App"</p>
+                </div>
+            </section>
+            
+            <section id="your-rights">
+                <h2>🔒 Your Privacy Rights</h2>
+                <p>You have the following rights regarding your data:</p>
+                <ul>
+                    <li><strong>Right to Access</strong>: Request a copy of your data</li>
+                    <li><strong>Right to Deletion</strong>: Request permanent deletion of your data</li>
+                    <li><strong>Right to Correction</strong>: Update or correct your data</li>
+                    <li><strong>Right to Export</strong>: Download your financial records</li>
+                    <li><strong>Right to Opt-Out</strong>: Disable analytics and personalized ads</li>
+                </ul>
+                <p>For more information, please review our <a href="PRIVACY_POLICY.html">Privacy Policy</a>.</p>
+            </section>
+        </main>
+        
+        <footer>
+            <p><strong>Your privacy matters to us.</strong></p>
+            <p>Last Updated: January 18, 2026</p>
+            <p><a href="PRIVACY_POLICY.html">Privacy Policy</a> | <a href="TERMS_AND_CONDITIONS.html">Terms & Conditions</a> | <a href="COOKIES_POLICY.html">Cookies Policy</a></p>
+        </footer>
+    </div>
+</body>
+</html>
